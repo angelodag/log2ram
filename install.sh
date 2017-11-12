@@ -9,8 +9,8 @@ then
   cp log2ram.conf /etc/log2ram.conf
   chmod 644 /etc/log2ram.conf
   systemctl enable log2ram
-  cp log2ram.hourly /etc/cron.hourly/log2ram
-  chmod +x /etc/cron.hourly/log2ram
+  cp log2ram.crontab /etc/cron.daily/log2ram
+  chmod +x /etc/cron.daily/log2ram
   
   if [ -d /var/log.hdd ]; then
     rm -r /var/log.hdd
