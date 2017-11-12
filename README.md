@@ -3,18 +3,18 @@ Like ramlog for systemd (on debian 8 jessie for example).
 
 Usefull for **Raspberry** for not writing all the time on the SD card. You need it because your SD card don't want to suffer anymore !
 
-The script [log2ram](https://github.com/azlux/log2ram) can work on every linux system. So you can use it with your own daemon manager if you don't have systemd.
+The script [log2ram](https://github.com/angelodag/log2ram) can work on every linux system. So you can use it with your own daemon manager if you don't have systemd.
 
 Log2Ram is based on transient log for Systemd here : [A transient /var/log](https://www.debian-administration.org/article/661/A_transient_/var/log)
 
 ## Install
 ```
-git clone https://github.com/azlux/log2ram.git
+git clone https://github.com/angelodag/log2ram.git
 cd log2ram
 chmod +x install.sh
 sudo ./install.sh
 ```
-**REBOOT** before installing anything else (for example apache2)
+**REBOOT** before installing anything else (for example apache2, nginx, php-fpm)
 
 ## Customize
 #### variables :
